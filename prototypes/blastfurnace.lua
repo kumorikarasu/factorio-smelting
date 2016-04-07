@@ -2,18 +2,18 @@
 {
   {
     type = "recipe-category",
-    name = "blast-smelting"
+    name = "kumori-blast-smelting"
   },
   {
     type = "item-subgroup",
     group = "intermediate-products",
-    name = "blast-smelting",
+    name = "kumori-blast-smelting",
     order = "a",
   },
   {
     type = "item",
     name = "blast-furnace",
-    icon = "__kumorismelting__/graphics/icons/blast-furnace.png",
+    icon = "__kumori-smelting__/graphics/icons/blast-furnace.png",
     flags = {"goes-to-quickbar"},
     subgroup = "smelting-machine",
     order = "b[blast-furnace]",
@@ -37,7 +37,7 @@
   {
     type = "assembling-machine",
     name = "blast-furnace",
-    icon = "__kumorismelting__/graphics/blast-furnace/blast-furnace.png",
+    icon = "__kumori-smelting__/graphics/blast-furnace/blast-furnace.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "blast-furnace"},
     max_health = 150,
@@ -64,7 +64,7 @@
     },
     collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
     selection_box = {{-0.8, -1}, {0.8, 1}},
-    crafting_categories = {"blast-smelting"},
+    crafting_categories = {"kumori-blast-smelting"},
     result_inventory_size = 3,
     energy_usage = "180kW",
     crafting_speed = 1,
@@ -90,7 +90,7 @@
     },
     animation =
     {
-      filename = "__kumorismelting__/graphics/blast-furnace/blast-furnace.png",
+      filename = "__kumori-smelting__/graphics/blast-furnace/blast-furnace.png",
       priority = "extra-high",
       width = 81,
       height = 64,

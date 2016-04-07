@@ -1,10 +1,10 @@
 {
-  "name": "kumorismelting",
+  "name": "kumori-smelting",
   "version": "0.1.0",
   "title": "Kumori's Smelting",
   "author": "kumori",
   "contact": "kumori@ryougi.com",
   "homepage": "N/A",
   "description": "Allows Increased Ore Production",
-  "dependencies": []
+  "dependencies": ["kumori-core"]
 }

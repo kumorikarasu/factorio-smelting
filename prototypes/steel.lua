@@ -17,7 +17,7 @@ data:extend(
   {
     type = "recipe",
     name = "molten-steel",
-    category = "kumoris-smelting",
+    category = "kumori-smelting",
     energy_required = 13.5,
     ingredients = {{"pig-iron", 1}},
     results = {
@@ -25,6 +25,17 @@ data:extend(
     }
   },
   {
+    type = "recipe",
+    name = "molten-steel",
+    category = "kumori-smelting",
+    energy_required = 13.5,
+    ingredients = {{"pig-iron", 1}},
+    results = {
+      {type="fluid", name="molten-steel", amount=4},
+    }
+  },
+  {
+    -- Receipe for smelting pig-iron in a furnace, terrible yeild, not recommended
     type = "recipe",
     name = "steel-plate",
     category = "smelting",

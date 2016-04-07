@@ -2,7 +2,7 @@ data:extend(
 {
   {
     type = "recipe-category",
-    name = "kumoris-smelting"
+    name = "kumori-smelting"
   },
   {
     type = "item",
@@ -89,7 +89,7 @@ data:extend(
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"kumoris-smelting"},
+    crafting_categories = {"kumori-smelting"},
     crafting_speed = 1,
     energy_source =
     {

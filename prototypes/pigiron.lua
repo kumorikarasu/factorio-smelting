@@ -3,7 +3,7 @@ data:extend(
   {
     type = "item",
     name = "pig-iron",
-    icon = "__kumorismelting__/graphics/pig-iron/pig-iron.png",
+    icon = "__kumori-smelting__/graphics/pig-iron/pig-iron.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "raw-material",
     order = "b",
@@ -12,9 +12,9 @@ data:extend(
   {
     type = "recipe",
     name = "pig-iron",
-    icon = "__kumorismelting__/graphics/pig-iron/pig-iron.png",
+    icon = "__kumori-smelting__/graphics/pig-iron/pig-iron.png",
     subgroup = "raw-material",
-    category = "blast-smelting",
+    category = "kumori-blast-smelting",
     enabled = true,
     energy_required = 30,
     ingredients =
