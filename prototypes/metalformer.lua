@@ -34,7 +34,7 @@ data:extend(
     type = "recipe",
     name = "molten-steel-plate",
     category = "kumori-metalforming",
-    energy_required = 13.5,
+    energy_required = 1,
     ingredients = {
       {type="fluid", name="molten-steel", amount=2},
     },
@@ -44,9 +44,10 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "molten-copper-plate",
+    name = "copper-plate",
     category = "kumori-metalforming",
-    energy_required = 13.5,
+    energy_required = 1,
+    enabled = true,
     ingredients = {
       {type="fluid", name="molten-copper", amount=2},
     },
@@ -56,14 +57,15 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "molten-iron-plate",
+    name = "iron-plate",
     category = "kumori-metalforming",
-    energy_required = 13.5,
+    energy_required = 1,
+    enabled = true,
     ingredients = {
       {type="fluid", name="molten-iron", amount=2},
     },
     results = {
-      {"iron-plate", 1}
+      {type="item", name="iron-plate", amount=1}
     }
   },
   {
@@ -72,9 +74,6 @@ data:extend(
     icon = "__base__/graphics/icons/assembling-machine-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "metalformer"},
-    ingredient_count = 1,
-    result_inventory_size = 2,
-    source_inventory_size = 1,
     max_health = 250,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -92,7 +91,7 @@ data:extend(
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 10,
-        base_level = 1,
+        base_level = -1,
         pipe_connections = {{ type="input", position = {0, 2} }}
       }
     },
@@ -129,6 +128,7 @@ data:extend(
     },
     crafting_categories = {"kumori-metalforming"},
     crafting_speed = 1,
+    ingredient_count = 4,
     energy_source =
     {
       type = "electric",

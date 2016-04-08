@@ -14,6 +14,13 @@ require("prototypes.metalformer") -- turns ingots into plates
 require("prototypes.furnace") -- turns raw ore into ingots
 require("prototypes.crafting") -- turns ingots into plates
 
+--Default receipes to disable
+data.raw.recipe["steel-plate"].group = "unused"
+
+
+
+
+
 --Support for bobs mods
 --if bobmods and bobmods.config and bOBmods.config.ores then
 --  if bobmods.config.ores.EnableBauxite then
