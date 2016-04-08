@@ -21,7 +21,7 @@ data:extend(
     ingredients =
     {
       {type="item", name="stone", amount=30},
-      {type="item", name="iron-plate", amount=30},
+      {type="item", name="steel-plate", amount=10},
       {type="item", name="electronic-circuit", amount=5},
     },
     results = 
@@ -36,7 +36,7 @@ data:extend(
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "smeltery"},
     source_inventory_size = 1,
-    result_inventory_size = 0,
+    result_inventory_size = 1,
     max_health = 250,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",

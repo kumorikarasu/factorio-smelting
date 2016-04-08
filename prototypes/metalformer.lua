@@ -17,6 +17,21 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "metalformer",
+    enabled = true,
+    ingredients =
+    {
+      --{type="item", name="stone-brick", amount=10},
+      {type="item", name="iron-plate", amount=10},
+      --{type="item", name="electronic-circuit", amount=1},
+    },
+    results = 
+    {
+      {type="item", name="metalformer", amount=1}
+    }
+  },
+  {
+    type = "recipe",
     name = "molten-steel-plate",
     category = "kumori-metalforming",
     energy_required = 13.5,
@@ -40,13 +55,26 @@ data:extend(
     }
   },
   {
-    type = "furnace",
+    type = "recipe",
+    name = "molten-iron-plate",
+    category = "kumori-metalforming",
+    energy_required = 13.5,
+    ingredients = {
+      {type="fluid", name="molten-iron", amount=2},
+    },
+    results = {
+      {"iron-plate", 1}
+    }
+  },
+  {
+    type = "assembling-machine",
     name = "metalformer",
     icon = "__base__/graphics/icons/assembling-machine-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "smeltery"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "metalformer"},
+    ingredient_count = 1,
+    result_inventory_size = 2,
     source_inventory_size = 1,
-    result_inventory_size = 1,
     max_health = 250,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -60,12 +88,12 @@ data:extend(
     fluid_boxes =
     {
       {
-        production_type = "output",
+        production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = 1,
-        pipe_connections = {{ type="output", position = {0, 2} }}
+        pipe_connections = {{ type="input", position = {0, 2} }}
       }
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
@@ -99,7 +127,7 @@ data:extend(
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"kumori-smelting"},
+    crafting_categories = {"kumori-metalforming"},
     crafting_speed = 1,
     energy_source =
     {

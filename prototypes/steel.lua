@@ -35,7 +35,7 @@ data:extend(
     }
   },
   {
-    -- Receipe for smelting pig-iron in a furnace, terrible yeild, not recommended
+    -- Receipe for smelting pig-iron in a furnace, terrible yield, required to build smeltery
     type = "recipe",
     name = "steel-plate",
     category = "smelting",
