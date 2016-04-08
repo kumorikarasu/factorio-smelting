@@ -5,7 +5,6 @@ require("prototypes.copper") -- Allows molten copper
 require("prototypes.steel") -- Allows molten steel (made from pig iron)
 require("prototypes.pigiron") -- Allows pig iron ingots
 require("prototypes.slag") -- Byprouct from smelting
-require("prototypes.gravel") -- Byprouct from mining
 
 require("prototypes.smelter") -- Melts down metals, also turns pig iron to molten steel
 require("prototypes.blastfurnace") -- iron, coal, stone -> pig iron
