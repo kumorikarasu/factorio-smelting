@@ -3,12 +3,17 @@
 require("prototypes.iron") -- Allows molten iron
 require("prototypes.copper") -- Allows molten copper
 require("prototypes.steel") -- Allows molten steel (made from pig iron)
+require("prototypes.stone") -- Allows alternative ways to get stone
 require("prototypes.pigiron") -- Allows pig iron ingots
 require("prototypes.slag") -- Byprouct from smelting
 
 require("prototypes.smelter") -- Melts down metals, also turns pig iron to molten steel
 require("prototypes.blastfurnace") -- iron, coal, stone -> pig iron
 require("prototypes.metalformer") -- turns ingots into plates
+
+require("prototypes.pulverizer") -- break items into gravel/sand
+require("prototypes.compressor") -- reforms broken items
+
 
 require("prototypes.furnace") -- turns raw ore into ingots
 require("prototypes.crafting") -- turns ingots into plates
