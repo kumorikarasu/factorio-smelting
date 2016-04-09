@@ -44,6 +44,6 @@ data:extend(
     results = {
       {type="item", name="steel-plate", amount=1},
     }
-  },
+  }
 }
 )

@@ -44,7 +44,7 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "copper-plate",
+    name = "copper-plate-from-molten",
     category = "kumori-metalforming",
     energy_required = 2,
     enabled = true,
@@ -57,7 +57,7 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "iron-plate",
+    name = "iron-plate-from-molten",
     category = "kumori-metalforming",
     energy_required = 2,
     enabled = true,
