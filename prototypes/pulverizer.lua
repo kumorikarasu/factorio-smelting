@@ -110,6 +110,38 @@ data:extend(
     results = {
       {"sand", 1}
     }
+  },
+  {
+    type = "recipe",
+    name = "iron-dust",
+    category = "kumori-pulverize",
+    icon = "__kumori-ores__/graphics/dust/iron-dust.png",
+    subgroup = "raw-material",
+    energy_required = 2,
+    ingredients = {
+      {type="item", name="iron-ore", amount=1},
+    },
+    results = {
+      {type="item", name="iron-dust", amount_min=2, amount_max=2, probability=1},
+      {type="item", name="gravel", amount_min=1, amount_max=1, probability=0.2},
+      {type="item", name="gold-dust", amount_min=1, amount_max=1, probability=0.02},
+    }
+  },
+  {
+    type = "recipe",
+    name = "copper-dust",
+    category = "kumori-pulverize",
+    icon = "__kumori-ores__/graphics/dust/copper-dust.png",
+    subgroup = "raw-material",
+    energy_required = 2,
+    ingredients = {
+      {type="item", name="copper-ore", amount=1},
+    },
+    results = {
+      {type="item", name="copper-dust", amount_min=2, amount_max=2, probability=1},
+      {type="item", name="gravel", amount_min=1, amount_max=1, probability=0.2},
+      {type="item", name="gold-dust", amount_min=1, amount_max=1, probability=0.02},
+    }
   }
 }
 )

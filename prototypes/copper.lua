@@ -38,6 +38,18 @@ data:extend(
     results = {
       {"copper-plate", 1}
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "copper-plate-from-dust",
+    category = "smelting",
+    icon = "__base__/graphics/icons/copper-plate.png",
+    energy_required = 3.5,
+    ingredients = {{"copper-dust", 2}},
+    subgroup = "raw-material",
+    results = {
+      {type="item", name="copper-plate", amount=1}
+    }
+  },
 }
 )

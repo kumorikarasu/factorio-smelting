@@ -70,6 +70,19 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "iron-plate-from-dust",
+    category = "smelting",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    energy_required = 3.5,
+    ingredients = {{"iron-dust", 2}},
+    subgroup = "raw-material",
+    results = {
+      {type="item", name="slag", amount_min=1, amount_max=1, probability=0.5},
+      {type="item", name="iron-plate", amount=1}
+    }
+  },
+  {
+    type = "recipe",
     name = "iron-plate-from-molten",
     category = "kumori-metalforming",
     energy_required = 2,
