@@ -33,7 +33,7 @@ data:extend(
     name = "molten-steel-from-iron-ore",
     category = "kumori-smelting",
     energy_required = 10,
-    enabled = false
+    enabled = false,
     icon = "__base__/graphics/icons/iron-plate.png",
     subgroup = "fluid",
     ingredients = {
