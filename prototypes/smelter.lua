@@ -17,7 +17,7 @@ data:extend(
   {
     type = "recipe",
     name = "smeltery",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type="item", name="stone", amount=10},
@@ -113,3 +113,5 @@ data:extend(
   }
 }
 )
+
+  table.insert(data.raw["technology"]["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "smeltery"})

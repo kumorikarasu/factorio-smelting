@@ -18,7 +18,7 @@ data:extend(
   {
     type = "recipe",
     name = "metalformer",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type="item", name="stone-brick", amount=10},
@@ -139,3 +139,6 @@ data:extend(
   }
 }
 )
+
+
+table.insert(data.raw["technology"]["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "metalformer"})

@@ -23,7 +23,7 @@
   {
     type = "recipe",
     name = "blast-furnace",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type="item", name="stone", amount=30},
@@ -121,3 +121,4 @@
 }
 ) 
 
+  table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "blast-furnace"})

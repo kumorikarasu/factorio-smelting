@@ -15,7 +15,7 @@ data:extend(
     icon = "__kumori-smelting__/graphics/pig-iron/pig-iron.png",
     subgroup = "raw-material",
     category = "kumori-blast-smelting",
-    enabled = true,
+    enabled = false,
     energy_required = 30,
     ingredients =
     {
@@ -31,3 +31,5 @@ data:extend(
   }
 }
 )
+
+table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "pig-iron"})
