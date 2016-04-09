@@ -20,7 +20,7 @@ data:extend(
     enabled = true,
     ingredients =
     {
-      {type="item", name="stone", amount=30},
+      {type="item", name="stone", amount=10},
       {type="item", name="steel-plate", amount=10},
       {type="item", name="electronic-circuit", amount=5},
     },
@@ -96,19 +96,16 @@ data:extend(
       type = "burner",
       effectivity = 1,
       fuel_inventory_size = 1,
+      emissions = 0.01,
       smoke =
       {
         {
-          name = "train-smoke",
-          deviation = {0.3, 0.3},
-          frequency = 100,
-          position = {0, 0},
-          starting_frame = 0,
-          starting_frame_deviation = 60,
-          height = 2,
-          height_deviation = 0.5,
-          starting_vertical_speed = 0.2,
-          starting_vertical_speed_deviation = 0.1,
+          name = "smoke",
+          deviation = {0.1, 0.1},
+          frequency = 5,
+          position = {0.0, -0.8},
+          starting_vertical_speed = 0.08,
+          starting_frame_deviation = 60
         }
       }
     },

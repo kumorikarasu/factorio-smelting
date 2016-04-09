@@ -13,6 +13,18 @@ data:extend(
     order = "a[fluid]-d[steel]",
     pressure_to_speed_ratio = 0.4,
     flow_to_energy_ratio = 0.59,
+  },
+  {
+    type = "recipe",
+    name = "molten-copper-from-ore",
+    category = "kumori-smelting",
+    icon = "__base__/graphics/icons/copper-plate.png",
+    subgroup = "fluid",
+    energy_required = 10,
+    ingredients = {{"copper-ore", 1}},
+    results = {
+      {type="fluid", name="molten-copper", amount=4},
+    }
   }
 }
 )

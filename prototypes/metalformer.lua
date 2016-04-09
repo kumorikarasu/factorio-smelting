@@ -21,9 +21,9 @@ data:extend(
     enabled = true,
     ingredients =
     {
-      --{type="item", name="stone-brick", amount=10},
-      {type="item", name="iron-plate", amount=10},
-      --{type="item", name="electronic-circuit", amount=1},
+      {type="item", name="stone-brick", amount=10},
+      {type="item", name="steel-plate", amount=10},
+      {type="item", name="electronic-circuit", amount=5},
     },
     results = 
     {
@@ -34,7 +34,7 @@ data:extend(
     type = "recipe",
     name = "molten-steel-plate",
     category = "kumori-metalforming",
-    energy_required = 1,
+    energy_required = 2,
     ingredients = {
       {type="fluid", name="molten-steel", amount=2},
     },
@@ -46,7 +46,7 @@ data:extend(
     type = "recipe",
     name = "copper-plate",
     category = "kumori-metalforming",
-    energy_required = 1,
+    energy_required = 2,
     enabled = true,
     ingredients = {
       {type="fluid", name="molten-copper", amount=2},
@@ -59,7 +59,7 @@ data:extend(
     type = "recipe",
     name = "iron-plate",
     category = "kumori-metalforming",
-    energy_required = 1,
+    energy_required = 2,
     enabled = true,
     ingredients = {
       {type="fluid", name="molten-iron", amount=2},

@@ -18,7 +18,7 @@ data:extend(
     type = "recipe",
     name = "molten-steel",
     category = "kumori-smelting",
-    energy_required = 13.5,
+    energy_required = 10,
     ingredients = {{"pig-iron", 1}},
     results = {
       {type="fluid", name="molten-steel", amount=4},
@@ -28,7 +28,7 @@ data:extend(
     type = "recipe",
     name = "molten-steel",
     category = "kumori-smelting",
-    energy_required = 13.5,
+    energy_required = 10,
     ingredients = {{"pig-iron", 1}},
     results = {
       {type="fluid", name="molten-steel", amount=4},
