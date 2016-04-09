@@ -23,7 +23,7 @@ data:extend(
       {type="fluid", name="water", amount=10}
     },
     result= "concrete",
-    result_count = 2
+    result_count = 5
   }
 }
 )
