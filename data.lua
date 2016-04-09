@@ -2,6 +2,8 @@
 
 require("prototypes.iron") -- Allows molten iron
 require("prototypes.copper") -- Allows molten copper
+require("prototypes.gold") -- Rare metal sometimes found while processing other metals
+
 require("prototypes.steel") -- Allows molten steel (made from pig iron)
 require("prototypes.stone") -- Allows alternative ways to get stone
 require("prototypes.pigiron") -- Allows pig iron ingots

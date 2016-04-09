@@ -18,8 +18,8 @@ data:extend(
     category = "crafting-with-fluid",
     ingredients =
     {
-      {"slag", 5},
-      {"gravel", 5},
+      {"slag", 4},
+      {"gravel", 4},
       {type="fluid", name="water", amount=10}
     },
     result= "concrete",

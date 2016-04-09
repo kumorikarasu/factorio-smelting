@@ -20,10 +20,10 @@ data:extend(
     category = "kumori-smelting",
     icon = "__base__/graphics/icons/iron-plate.png",
     subgroup = "fluid",
-    energy_required = 13.5,
+    energy_required = 5,
     ingredients = {{"iron-ore", 1}},
     results = {
-      {type="item", name="slag", amount=1},
+      {type="item", name="slag", amount_min=1, amount_max=1, probability=0.5},
       {type="fluid", name="molten-iron", amount=4},
     }
   },
@@ -41,7 +41,7 @@ data:extend(
       {"coal", 4}
     },
     results = {
-      {type="item", name="slag", amount=1},
+      {type="item", name="slag", amount_min=1, amount_max=1, probability=0.5},
       {type="fluid", name="molten-steel", amount=4},
     }
   },
@@ -49,7 +49,7 @@ data:extend(
     type = "recipe",
     name = "molten-iron-from-plate",
     category = "kumori-smelting",
-    energy_required = 8,
+    energy_required = 3.5,
     ingredients = {{"iron-plate", 2}},
     results = {
       {type="fluid", name="molten-iron", amount=4},
@@ -65,6 +65,19 @@ data:extend(
     subgroup = "raw-material",
     results = {
       {type="item", name="slag", amount_min=1, amount_max=1, probability=0.5},
+      {type="item", name="iron-plate", amount=1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "iron-plate-from-molten",
+    category = "kumori-metalforming",
+    energy_required = 2,
+    enabled = true,
+    ingredients = {
+      {type="fluid", name="molten-iron", amount=3},
+    },
+    results = {
       {type="item", name="iron-plate", amount=1}
     }
   }

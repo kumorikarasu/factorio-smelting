@@ -35,6 +35,18 @@ data:extend(
     }
   },
   {
+    type = "recipe",
+    name = "molten-steel-plate",
+    category = "kumori-metalforming",
+    energy_required = 2,
+    ingredients = {
+      {type="fluid", name="molten-steel", amount=3},
+    },
+    results = {
+      {"steel-plate", 1}
+    }
+  },
+  {
     -- Receipe for smelting pig-iron in a furnace, terrible yield, required to build smeltery
     type = "recipe",
     name = "steel-plate",

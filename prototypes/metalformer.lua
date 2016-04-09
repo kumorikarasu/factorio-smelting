@@ -43,32 +43,6 @@ data:extend(
     }
   },
   {
-    type = "recipe",
-    name = "copper-plate-from-molten",
-    category = "kumori-metalforming",
-    energy_required = 2,
-    enabled = true,
-    ingredients = {
-      {type="fluid", name="molten-copper", amount=2},
-    },
-    results = {
-      {"copper-plate", 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "iron-plate-from-molten",
-    category = "kumori-metalforming",
-    energy_required = 2,
-    enabled = true,
-    ingredients = {
-      {type="fluid", name="molten-iron", amount=2},
-    },
-    results = {
-      {type="item", name="iron-plate", amount=1}
-    }
-  },
-  {
     type = "assembling-machine",
     name = "metalformer",
     icon = "__base__/graphics/icons/assembling-machine-2.png",

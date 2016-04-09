@@ -11,6 +11,18 @@ data:extend(
     results = {
       {"stone", 1}
     }
+  },
+  {
+    type = "recipe",
+    name = "gravel",
+    category = "kumori-pulverize",
+    energy_required = 2,
+    ingredients = {
+      {type="item", name="stone", amount=1},
+    },
+    results = {
+      {"gravel", 4}
+    }
   }
 }
 )

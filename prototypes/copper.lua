@@ -25,6 +25,19 @@ data:extend(
     results = {
       {type="fluid", name="molten-copper", amount=4},
     }
+  },
+  {
+    type = "recipe",
+    name = "copper-plate-from-molten",
+    category = "kumori-metalforming",
+    energy_required = 2,
+    enabled = true,
+    ingredients = {
+      {type="fluid", name="molten-copper", amount=3},
+    },
+    results = {
+      {"copper-plate", 1}
+    }
   }
 }
 )
