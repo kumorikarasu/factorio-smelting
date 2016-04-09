@@ -54,6 +54,19 @@ data:extend(
     results = {
       {type="fluid", name="molten-iron", amount=4},
     }
+  },
+  {
+    type = "recipe",
+    name = "iron-plate",
+    category = "smelting",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    energy_required = 3.5,
+    ingredients = {{"iron-ore", 1}},
+    subgroup = "raw-material",
+    results = {
+      {type="item", name="slag", amount_min=1, amount_max=1, probability=0.5},
+      {type="item", name="iron-plate", amount=1}
+    }
   }
 }
 )

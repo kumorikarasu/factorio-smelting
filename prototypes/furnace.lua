@@ -1,0 +1,1 @@
+data.raw["furnace"]["stone-furnace"].result_inventory_size = 2

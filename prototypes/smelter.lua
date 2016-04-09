@@ -20,7 +20,7 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {type="item", name="stone", amount=10},
+      {type="item", name="stone-brick", amount=10},
       {type="item", name="steel-plate", amount=10},
       {type="item", name="electronic-circuit", amount=5},
     },

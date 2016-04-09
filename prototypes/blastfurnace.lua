@@ -26,8 +26,9 @@
     enabled = false,
     ingredients =
     {
-      {type="item", name="stone", amount=30},
+      {type="item", name="stone", amount=5},
       {type="item", name="iron-plate", amount=10},
+      {type="item", name="stone-furnace", amount=1},
     },
     results = 
     {
