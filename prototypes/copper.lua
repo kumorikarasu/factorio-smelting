@@ -30,7 +30,7 @@ data:extend(
     type = "recipe",
     name = "copper-plate-from-molten",
     category = "kumori-metalforming",
-    energy_required = 2,
+    energy_required = 1,
     enabled = true,
     ingredients = {
       {type="fluid", name="molten-copper", amount=3},
@@ -41,14 +41,14 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "copper-plate-from-dust",
-    category = "smelting",
+    name = "molten-copper-from-dust",
+    category = "kumori-smelting",
     icon = "__base__/graphics/icons/copper-plate.png",
-    energy_required = 3.5,
-    ingredients = {{"copper-dust", 2}},
-    subgroup = "raw-material",
+    subgroup = "fluid",
+    energy_required = 2,
+    ingredients = {{"copper-dust", 1}},
     results = {
-      {type="item", name="copper-plate", amount=1}
+      {type="fluid", name="molten-copper", amount=3},
     }
   },
 }

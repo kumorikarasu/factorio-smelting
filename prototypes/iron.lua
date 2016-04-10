@@ -27,6 +27,18 @@ data:extend(
       {type="fluid", name="molten-iron", amount=4},
     }
   },
+  {
+    type = "recipe",
+    name = "molten-iron-from-dust",
+    category = "kumori-smelting",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    subgroup = "fluid",
+    energy_required = 2,
+    ingredients = {{"iron-dust", 1}},
+    results = {
+      {type="fluid", name="molten-iron", amount=3},
+    }
+  },
   { -- Advanced Steel Manufacturing to unlock this, Allows skipping blast furnace
     -- Can only be done in the Alloy Smelter
     type = "recipe",
@@ -70,22 +82,9 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "iron-plate-from-dust",
-    category = "smelting",
-    icon = "__base__/graphics/icons/iron-plate.png",
-    energy_required = 3.5,
-    ingredients = {{"iron-dust", 2}},
-    subgroup = "raw-material",
-    results = {
-      {type="item", name="slag", amount_min=1, amount_max=1, probability=0.5},
-      {type="item", name="iron-plate", amount=1}
-    }
-  },
-  {
-    type = "recipe",
     name = "iron-plate-from-molten",
     category = "kumori-metalforming",
-    energy_required = 2,
+    energy_required = 1,
     enabled = true,
     ingredients = {
       {type="fluid", name="molten-iron", amount=3},
