@@ -6,5 +6,5 @@
   "contact": "kumori@ryougi.com",
   "homepage": "N/A",
   "description": "Allows Increased Ore Production",
-  "dependencies": ["kumori-core"]
+  "dependencies": ["kumori-core", "kumori-ores"]
 }
