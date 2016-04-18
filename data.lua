@@ -19,6 +19,8 @@ require("prototypes.compressor") -- reforms broken items
 require("prototypes.furnace") -- turns raw ore into ingots
 require("prototypes.crafting") -- turns ingots into plates
 
+require("prototypes.brick") -- turns ingots into plates
+
 --Default receipes to disable
 data.raw.recipe["steel-plate"].group = "unused"
 
