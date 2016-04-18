@@ -1,46 +1,41 @@
  data:extend(
 {
   {
-    type = "recipe-category",
-    name = "kumori-blast-smelting"
-  },
-  {
     type = "item-subgroup",
     group = "intermediate-products",
-    name = "kumori-blast-smelting",
+    name = "kumori-brick-smelting",
     order = "a",
   },
   {
     type = "item",
-    name = "blast-furnace",
-    icon = "__kumori-smelting__/graphics/icons/blast-furnace.png",
+    name = "brick-furnace",
+    icon = "__kumori-smelting__/graphics/icons/brick-furnace.png",
     flags = {"goes-to-quickbar"},
     subgroup = "smelting-machine",
     order = "b[blast-furnace]",
-    place_result = "blast-furnace",
+    place_result = "brick-furnace",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "blast-furnace",
-    enabled = false,
+    name = "brick-furnace",
+    enabled = true,
     ingredients =
     {
+      {type="item", name="stone-brick", amount=10},
       {type="item", name="brick", amount=10},
-      {type="item", name="iron-plate", amount=10},
-      {type="item", name="brick-furnace", amount=1},
     },
     results = 
     {
-      {type="item", name="blast-furnace", amount=1}
+      {type="item", name="brick-furnace", amount=1}
     }
   },
   {
-    type = "assembling-machine",
-    name = "blast-furnace",
-    icon = "__kumori-smelting__/graphics/blast-furnace/blast-furnace.png",
+    type = "furnace",
+    name = "brick-furnace",
+    icon = "__kumori-smelting__/graphics/brick-furnace/brick-furnace.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "blast-furnace"},
+    minable = {mining_time = 1, result = "brick-furnace"},
     max_health = 150,
     corpse = "medium-remnants",
     repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
@@ -65,11 +60,11 @@
     },
     collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
     selection_box = {{-0.8, -1}, {0.8, 1}},
-    crafting_categories = {"kumori-blast-smelting"},
+    crafting_categories = {"smelting", "stone-smelting"},
     result_inventory_size = 3,
     energy_usage = "180kW",
     crafting_speed = 1,
-    source_inventory_size = 3,
+    source_inventory_size = 1,
     ingredient_count = 3,
     energy_source =
     {
@@ -91,7 +86,7 @@
     },
     animation =
     {
-      filename = "__kumori-smelting__/graphics/blast-furnace/blast-furnace.png",
+      filename = "__kumori-smelting__/graphics/brick-furnace/brick-furnace.png",
       priority = "extra-high",
       width = 81,
       height = 64,
@@ -120,6 +115,4 @@
     fast_replaceable_group = "furnace"
   }
 }
-) 
-
-  table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "blast-furnace"})
+)

@@ -21,7 +21,7 @@ data:extend(
     {
       {type="item", name="iron-plate", amount=4},
       {type="item", name="coal", amount=6},
-      {type="item", name="stone", amount=2},
+      {type="item", name="limestone", amount=2},
     },
     results = 
     {
