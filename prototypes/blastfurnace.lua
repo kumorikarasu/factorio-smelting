@@ -107,7 +107,7 @@
         west_position = {0.0, 0.0},
         animation =
         {
-          filename = "__base__/graphics/entity/stone-furnace/stone-furnace-fire.png",
+          filename = "__kumori-smelting__/graphics/blast-furnace/blast-furnace-fire.png",
           priority = "extra-high",
           width = 23,
           height = 27,
