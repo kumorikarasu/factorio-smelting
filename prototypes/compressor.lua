@@ -3,21 +3,21 @@ data:extend(
 {
   {
     type = "recipe-category",
-    name = "kumori-compression"
+    name = "ku-compression"
   },
   {
     type = "item",
-    name = "compressor",
+    name = "ku-compressor",
     icon = "__base__/graphics/icons/assembling-machine-1.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
     order = "a[assembling-machine-1]",
-    place_result = "compressor",
+    place_result = "ku-compressor",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "compressor",
+    name = "ku-compressor",
     enabled = false,
     ingredients =
     {
@@ -27,15 +27,15 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="compressor", amount=1}
+      {type="item", name="ku-compressor", amount=1}
     }
   },
   {
     type = "assembling-machine",
-    name = "compressor",
+    name = "ku-compressor",
     icon = "__base__/graphics/icons/assembling-machine-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "compressor"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "ku-compressor"},
     max_health = 250,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -77,7 +77,7 @@ data:extend(
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"kumori-compression"},
+    crafting_categories = {"ku-compression"},
     crafting_speed = 1,
     ingredient_count = 4,
     energy_source =
@@ -92,4 +92,4 @@ data:extend(
 )
 
 
-table.insert(data.raw["technology"]["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "compressor"})
+table.insert(data.raw["technology"]["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "ku-compressor"})

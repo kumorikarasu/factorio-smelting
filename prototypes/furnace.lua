@@ -3,7 +3,7 @@ data:extend(
 {
   {
     type = "recipe-category",
-    name = "stone-smelting" -- the default furnace is kindof shit in my mod :P
+    name = "stone-smelting" -- the default furnace is nerfed
   }
 })
 

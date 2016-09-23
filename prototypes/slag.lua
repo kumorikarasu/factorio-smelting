@@ -3,7 +3,7 @@ data:extend(
 {
   {
   type = "item",
-  name = "slag",
+  name = "ku-slag",
   icon = "__kumori-smelting__/graphics/slag/slag.png",
   flags = {"goes-to-main-inventory"},
   subgroup = "raw-material",
@@ -18,8 +18,8 @@ data:extend(
     category = "crafting-with-fluid",
     ingredients =
     {
-      {"slag", 4},
-      {"gravel", 4},
+      {"ku-slag", 4},
+      {"ku-gravel", 4},
       {type="fluid", name="water", amount=10}
     },
     result= "concrete",
@@ -34,8 +34,8 @@ data.raw["technology"]["concrete"].unit =
         count = 50,
         ingredients =
         {
-          {"science-pack-1", 1},
+          {"science-pack-1", 2},
           {"science-pack-2", 1},
         },
-        time = 30
+        time = 60
       }

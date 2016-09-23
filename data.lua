@@ -26,7 +26,7 @@ require("prototypes.brick-furnace") -- turns ingots into plates
 data.raw.recipe["steel-plate"].group = "unused"
 
 
-table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "pig-iron"})
+table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "ku-pig-iron"})
 
 
 

@@ -3,39 +3,39 @@
   {
     type = "item-subgroup",
     group = "intermediate-products",
-    name = "kumori-brick-smelting",
+    name = "ku-brick-smelting",
     order = "a",
   },
   {
     type = "item",
-    name = "brick-furnace",
+    name = "ku-brick-furnace",
     icon = "__kumori-smelting__/graphics/icons/brick-furnace.png",
     flags = {"goes-to-quickbar"},
     subgroup = "smelting-machine",
     order = "b[blast-furnace]",
-    place_result = "brick-furnace",
+    place_result = "ku-brick-furnace",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "brick-furnace",
+    name = "ku-brick-furnace",
     enabled = true,
     ingredients =
     {
       {type="item", name="stone-brick", amount=10},
-      {type="item", name="brick", amount=10},
+      {type="item", name="ku-brick", amount=10},
     },
     results = 
     {
-      {type="item", name="brick-furnace", amount=1}
+      {type="item", name="ku-brick-furnace", amount=1}
     }
   },
   {
     type = "furnace",
-    name = "brick-furnace",
+    name = "ku-brick-furnace",
     icon = "__kumori-smelting__/graphics/brick-furnace/brick-furnace.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "brick-furnace"},
+    minable = {mining_time = 1, result = "ku-brick-furnace"},
     max_health = 150,
     corpse = "medium-remnants",
     repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },

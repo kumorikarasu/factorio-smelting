@@ -3,7 +3,7 @@ data:extend(
 {
   {
     type = "fluid",
-    name = "molten-copper",
+    name = "ku-molten-copper",
     default_temperature = 1370,
     max_temperature = 1510,
     heat_capacity = "10KJ",
@@ -16,24 +16,24 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "molten-copper-from-ore",
-    category = "kumori-smelting",
+    name = "ku-molten-copper-from-ore",
+    category = "ku-smelting",
     icon = "__base__/graphics/icons/copper-plate.png",
     subgroup = "fluid",
     energy_required = 10,
     ingredients = {{"copper-ore", 1}},
     results = {
-      {type="fluid", name="molten-copper", amount=4},
+      {type="fluid", name="ku-molten-copper", amount=4},
     }
   },
   {
     type = "recipe",
-    name = "copper-plate-from-molten",
-    category = "kumori-metalforming",
+    name = "ku-copper-plate-from-molten",
+    category = "ku-metalforming",
     energy_required = 1,
     enabled = true,
     ingredients = {
-      {type="fluid", name="molten-copper", amount=3},
+      {type="fluid", name="ku-molten-copper", amount=3},
     },
     results = {
       {"copper-plate", 1}
@@ -41,14 +41,14 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "molten-copper-from-dust",
-    category = "kumori-smelting",
+    name = "ku-molten-copper-from-dust",
+    category = "ku-smelting",
     icon = "__base__/graphics/icons/copper-plate.png",
     subgroup = "fluid",
     energy_required = 2,
-    ingredients = {{"copper-dust", 1}},
+    ingredients = {{"ku-copper-dust", 1}},
     results = {
-      {type="fluid", name="molten-copper", amount=3},
+      {type="fluid", name="ku-molten-copper", amount=3},
     }
   },
 }

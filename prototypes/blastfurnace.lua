@@ -2,45 +2,45 @@
 {
   {
     type = "recipe-category",
-    name = "kumori-blast-smelting"
+    name = "ku-blast-smelting"
   },
   {
     type = "item-subgroup",
     group = "intermediate-products",
-    name = "kumori-blast-smelting",
+    name = "ku-blast-smelting",
     order = "a",
   },
   {
     type = "item",
-    name = "blast-furnace",
+    name = "ku-blast-furnace",
     icon = "__kumori-smelting__/graphics/icons/blast-furnace.png",
     flags = {"goes-to-quickbar"},
     subgroup = "smelting-machine",
-    order = "b[blast-furnace]",
-    place_result = "blast-furnace",
+    order = "b[ku-blast-furnace]",
+    place_result = "ku-blast-furnace",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "blast-furnace",
+    name = "ku-blast-furnace",
     enabled = false,
     ingredients =
     {
-      {type="item", name="brick", amount=10},
+      {type="item", name="ku-brick", amount=10},
       {type="item", name="iron-plate", amount=10},
-      {type="item", name="brick-furnace", amount=1},
+      {type="item", name="ku-brick-furnace", amount=1},
     },
     results = 
     {
-      {type="item", name="blast-furnace", amount=1}
+      {type="item", name="ku-blast-furnace", amount=1}
     }
   },
   {
     type = "assembling-machine",
-    name = "blast-furnace",
+    name = "ku-blast-furnace",
     icon = "__kumori-smelting__/graphics/blast-furnace/blast-furnace.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "blast-furnace"},
+    minable = {mining_time = 1, result = "ku-blast-furnace"},
     max_health = 150,
     corpse = "medium-remnants",
     repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
@@ -65,7 +65,7 @@
     },
     collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
     selection_box = {{-0.8, -1}, {0.8, 1}},
-    crafting_categories = {"kumori-blast-smelting"},
+    crafting_categories = {"ku-blast-smelting"},
     result_inventory_size = 3,
     energy_usage = "180kW",
     crafting_speed = 1,
@@ -122,4 +122,4 @@
 }
 ) 
 
-  table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "blast-furnace"})
+table.insert(data.raw["technology"]["steel-processing"].effects, {type = "unlock-recipe", recipe = "ku-blast-furnace"})

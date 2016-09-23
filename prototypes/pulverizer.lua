@@ -3,21 +3,21 @@ data:extend(
 {
   {
     type = "recipe-category",
-    name = "kumori-pulverize"
+    name = "ku-pulverize"
   },
   {
     type = "item",
-    name = "pulverizer",
+    name = "ku-pulverizer",
     icon = "__base__/graphics/icons/assembling-machine-1.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
     order = "a[assembling-machine-1]",
-    place_result = "pulverizer",
+    place_result = "ku-pulverizer",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "pulverizer",
+    name = "ku-pulverizer",
     enabled = false,
     ingredients =
     {
@@ -27,15 +27,15 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="pulverizer", amount=1}
+      {type="item", name="ku-pulverizer", amount=1}
     }
   },
   {
     type = "assembling-machine",
-    name = "pulverizer",
+    name = "ku-pulverizer",
     icon = "__base__/graphics/icons/assembling-machine-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "pulverizer"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "ku-pulverizer"},
     max_health = 250,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -77,7 +77,7 @@ data:extend(
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"kumori-pulverize"},
+    crafting_categories = {"ku-pulverize"},
     crafting_speed = 1,
     ingredient_count = 4,
     energy_source =
@@ -92,7 +92,7 @@ data:extend(
 )
 
 
-table.insert(data.raw["technology"]["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "pulverizer"})
+table.insert(data.raw["technology"]["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "ku-pulverizer"})
 
 
 -- Pulverizer Receipies
@@ -102,19 +102,19 @@ data:extend(
   {
     type = "recipe",
     name = "sand",
-    category = "kumori-pulverize",
+    category = "ku-pulverize",
     energy_required = 2,
     ingredients = {
-      {type="item", name="gravel", amount=2},
+      {type="item", name="ku-gravel", amount=2},
     },
     results = {
-      {"sand", 1}
+      {"ku-sand", 1}
     }
   },
   {
     type = "recipe",
     name = "iron-dust",
-    category = "kumori-pulverize",
+    category = "ku-pulverize",
     icon = "__kumori-ores__/graphics/dust/iron-dust.png",
     subgroup = "raw-material",
     energy_required = 2,
@@ -122,15 +122,15 @@ data:extend(
       {type="item", name="iron-ore", amount=1},
     },
     results = {
-      {type="item", name="iron-dust", amount_min=2, amount_max=2, probability=1},
-      {type="item", name="gravel", amount_min=1, amount_max=1, probability=0.2},
-      {type="item", name="gold-dust", amount_min=1, amount_max=1, probability=0.02},
+      {type="item", name="ku-iron-dust", amount_min=2, amount_max=2, probability=1},
+      {type="item", name="ku-gravel", amount_min=1, amount_max=1, probability=0.2},
+      {type="item", name="ku-gold-dust", amount_min=1, amount_max=1, probability=0.02},
     }
   },
   {
     type = "recipe",
     name = "copper-dust",
-    category = "kumori-pulverize",
+    category = "ku-pulverize",
     icon = "__kumori-ores__/graphics/dust/copper-dust.png",
     subgroup = "raw-material",
     energy_required = 2,
@@ -138,9 +138,9 @@ data:extend(
       {type="item", name="copper-ore", amount=1},
     },
     results = {
-      {type="item", name="copper-dust", amount_min=2, amount_max=2, probability=1},
-      {type="item", name="gravel", amount_min=1, amount_max=1, probability=0.2},
-      {type="item", name="gold-dust", amount_min=1, amount_max=1, probability=0.02},
+      {type="item", name="ku-copper-dust", amount_min=2, amount_max=2, probability=1},
+      {type="item", name="ku-gravel", amount_min=1, amount_max=1, probability=0.2},
+      {type="item", name="ku-gold-dust", amount_min=1, amount_max=1, probability=0.02},
     }
   }
 }

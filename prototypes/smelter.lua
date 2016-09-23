@@ -2,21 +2,21 @@ data:extend(
 {
   {
     type = "recipe-category",
-    name = "kumori-smelting"
+    name = "ku-smelting"
   },
   {
     type = "item",
-    name = "smeltery",
+    name = "ku-smeltery",
     icon = "__base__/graphics/icons/assembling-machine-1.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
     order = "a[assembling-machine-1]",
-    place_result = "smeltery",
+    place_result = "ku-smeltery",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "smeltery",
+    name = "ku-smeltery",
     enabled = false,
     ingredients =
     {
@@ -26,15 +26,15 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="smeltery", amount=1}
+      {type="item", name="ku-smeltery", amount=1}
     }
   },
   {
     type = "furnace",
-    name = "smeltery",
+    name = "ku-smeltery",
     icon = "__base__/graphics/icons/assembling-machine-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "smeltery"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "ku-smeltery"},
     source_inventory_size = 1,
     result_inventory_size = 1,
     max_health = 250,
@@ -89,7 +89,7 @@ data:extend(
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"kumori-smelting"},
+    crafting_categories = {"ku-smelting"},
     crafting_speed = 1,
     energy_source =
     {
@@ -114,4 +114,4 @@ data:extend(
 }
 )
 
-  table.insert(data.raw["technology"]["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "smeltery"})
+  table.insert(data.raw["technology"]["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "ku-smeltery"})

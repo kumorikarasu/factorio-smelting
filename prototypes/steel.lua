@@ -3,7 +3,7 @@ data:extend(
 {
   {
     type = "fluid",
-    name = "molten-steel",
+    name = "ku-molten-steel",
     default_temperature = 1370,
     max_temperature = 1510,
     heat_capacity = "10KJ",
@@ -16,31 +16,21 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "molten-steel",
-    category = "kumori-smelting",
+    name = "ku-molten-steel",
+    category = "ku-smelting",
     energy_required = 10,
-    ingredients = {{"pig-iron", 1}},
+    ingredients = {{"ku-pig-iron", 1}},
     results = {
-      {type="fluid", name="molten-steel", amount=4},
+      {type="fluid", name="ku-molten-steel", amount=5},
     }
   },
   {
     type = "recipe",
-    name = "molten-steel",
-    category = "kumori-smelting",
-    energy_required = 10,
-    ingredients = {{"pig-iron", 1}},
-    results = {
-      {type="fluid", name="molten-steel", amount=4},
-    }
-  },
-  {
-    type = "recipe",
-    name = "molten-steel-plate",
-    category = "kumori-metalforming",
+    name = "ku-molten-steel-plate",
+    category = "ku-metalforming",
     energy_required = 2,
     ingredients = {
-      {type="fluid", name="molten-steel", amount=3},
+      {type="fluid", name="ku-molten-steel", amount=10},
     },
     results = {
       {"steel-plate", 1}
@@ -49,10 +39,10 @@ data:extend(
   {
     -- Receipe for smelting pig-iron in a furnace, terrible yield, required to build smeltery
     type = "recipe",
-    name = "steel-plate",
+    name = "ku-steel-plate",
     category = "smelting",
-    energy_required = 60,
-    ingredients = {{"pig-iron", 2}},
+    energy_required = 240,
+    ingredients = {{"ku-pig-iron", 5}},
     results = {
       {type="item", name="steel-plate", amount=1},
     }

@@ -3,21 +3,21 @@ data:extend(
 {
   {
     type = "recipe-category",
-    name = "kumori-metalforming"
+    name = "ku-metalforming"
   },
   {
     type = "item",
-    name = "metalformer",
+    name = "ku-metalformer",
     icon = "__base__/graphics/icons/assembling-machine-1.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
     order = "a[assembling-machine-1]",
-    place_result = "metalformer",
+    place_result = "ku-metalformer",
     stack_size = 50
   },
   {
     type = "recipe",
-    name = "metalformer",
+    name = "ku-metalformer",
     enabled = false,
     ingredients =
     {
@@ -27,16 +27,16 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="metalformer", amount=1}
+      {type="item", name="ku-metalformer", amount=1}
     }
   },
   {
     type = "recipe",
-    name = "molten-steel-plate",
-    category = "kumori-metalforming",
+    name = "ku-molten-steel-plate",
+    category = "ku-metalforming",
     energy_required = 2,
     ingredients = {
-      {type="fluid", name="molten-steel", amount=2},
+      {type="fluid", name="ku-molten-steel", amount=2},
     },
     results = {
       {"steel-plate", 1}
@@ -44,10 +44,10 @@ data:extend(
   },
   {
     type = "assembling-machine",
-    name = "metalformer",
+    name = "ku-metalformer",
     icon = "__base__/graphics/icons/assembling-machine-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "metalformer"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "ku-metalformer"},
     max_health = 250,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -100,7 +100,7 @@ data:extend(
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"kumori-metalforming"},
+    crafting_categories = {"ku-metalforming"},
     crafting_speed = 1,
     ingredient_count = 4,
     energy_source =
@@ -115,4 +115,4 @@ data:extend(
 )
 
 
-table.insert(data.raw["technology"]["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "metalformer"})
+table.insert(data.raw["technology"]["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "ku-metalformer"})
